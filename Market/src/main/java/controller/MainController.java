@@ -137,7 +137,7 @@ public class MainController extends HttpServlet {
 			request.setAttribute("product", product);
 			nextPage = "/product/updateProductForm.jsp";
 		}else if(command.equals("/updateProduct.do")) {
-			String realFolder = "C:/Users/kiyon/git/jspworks3/Market/src/main/webapp/upload";
+			String realFolder = "C:\\Users\\kiyon\\git\\jsp0\\Market\\src\\main\\webapp\\upload";
 
 			MultipartRequest multi = new MultipartRequest(request, realFolder, 5*1024*1024,
 					"utf-8", new DefaultFileRenamePolicy());
